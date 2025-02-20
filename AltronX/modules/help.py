@@ -1,24 +1,17 @@
-from config import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, SUDO_USERS, CMD_HNDLR as hl
+from config import MK1, MK2,  SUDO_USERS, CMD_HNDLR as hl
 from telethon import events, Button
 
 
-PythonHelp = f"⚡️ ​𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥 𝗦𝗣𝗔𝗠 𝙃𝗘𝗟𝗣 𝙈𝗘𝗡𝗨 ⚡️\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @SHIVANSHDEVS**"
+PythonHelp = f"⚡️ ​𝗦𝗛𝗨𝗕𝗛 𝗦𝗣𝗔𝗠 𝙃𝗘𝗟𝗣 𝙈𝗘𝗡𝗨 ⚡️\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @Demonxcoder**"
 
 
 @MK1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 @MK2.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@MK3.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@MK4.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@MK5.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@MK6.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@MK7.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@MK8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@MK9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@MK10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+
 async def help(event):
     if event.sender_id in SUDO_USERS:
        await event.client.send_file(event.chat_id,
-                               "https://telegra.ph/file/05522e13c97752efe5e75.png",
+                               "https://graph.org/file/db0fbc02a08c2a28349f1-3671ff24b68aa73e82.jpg",
                                   caption=PythonHelp,
                                   buttons=[
            [
@@ -29,8 +22,8 @@ async def help(event):
             Button.inline("⚡️ ᴇxᴛʀᴀ ⚡️", data="extra"),
            ],
            [    
-            Button.url("⚡️ ᴄʜᴀɴɴᴇʟ ⚡️", "https://t.me/SHIVANSH474"),
-            Button.url("⚡️ sᴜᴘᴘᴏʀᴛ ⚡️", "https://t.me/MASTIWITHFRIENDSXD")
+            Button.url("⚡️ 𝗠𝗢𝗩𝗜𝗘 ⚡️", "https://t.me/MoviesWDs_bot"),
+            Button.url("⚡️ sᴜᴘᴘᴏʀᴛ ⚡️", "https://t.me/Mrshubh_1227")
            ],
            ],
            )
@@ -54,7 +47,7 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**© @SHIVANSHDEVS**
+**© @Demonxcoder**
 """
 
                  
@@ -86,7 +79,7 @@ raid_msg = f"""
   2) {hl}craid <count> <reply to user>
 
 
-**© @SHIVANSHDEVS**
+**© @Demonxcoder**
 """
 
 spam_msg = f"""
@@ -103,20 +96,13 @@ spam_msg = f"""
   1) {hl}hang <counter> (you can reply any message if you want bot to reply that message and do spamming)
 
 
-** © @SHIVANSHDEVS**
+** © @Demonxcoder**
 """                     
            
            
 @MK1.on(events.CallbackQuery(pattern=r"help_back"))
 @MK2.on(events.CallbackQuery(pattern=r"help_back"))
-@MK3.on(events.CallbackQuery(pattern=r"help_back"))
-@MK4.on(events.CallbackQuery(pattern=r"help_back"))
-@MK5.on(events.CallbackQuery(pattern=r"help_back"))
-@MK6.on(events.CallbackQuery(pattern=r"help_back"))
-@MK7.on(events.CallbackQuery(pattern=r"help_back"))
-@MK8.on(events.CallbackQuery(pattern=r"help_back"))
-@MK9.on(events.CallbackQuery(pattern=r"help_back"))
-@MK10.on(events.CallbackQuery(pattern=r"help_back"))
+
 async def helpback(event):
    if event.query.user_id in SUDO_USERS:    
       await event.edit(
@@ -130,67 +116,46 @@ async def helpback(event):
             Button.inline("⚡️ ᴇxᴛʀᴀ ⚡️", data="extra"),
            ],
            [
-            Button.url("⚡️ ᴄʜᴀɴɴᴇʟ ⚡️", "https://t.me/SHIVANSH474"),
-            Button.url("⚡️ sᴜᴘᴘᴏʀᴛ ⚡️", "https://t.me/MASTIWITHFRIENDSXD")
+            Button.url("⚡️ 𝗠𝗢𝗩𝗜𝗘𝗦 ⚡️", "https://t.me/MoviesWDs_bot"),
+            Button.url("⚡️ sᴜᴘᴘᴏʀᴛ ⚡️", "https://t.me/Mrshubh_1227")
            ],
            ],
         )           
    else:
-        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝐈𝐕𝐀𝐍𝐒𝐇⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
+        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝗨𝗕𝗛⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
 
 
 @MK1.on(events.CallbackQuery(pattern=r"spam"))
 @MK2.on(events.CallbackQuery(pattern=r"spam"))
-@MK3.on(events.CallbackQuery(pattern=r"spam"))
-@MK4.on(events.CallbackQuery(pattern=r"spam"))
-@MK5.on(events.CallbackQuery(pattern=r"spam"))
-@MK6.on(events.CallbackQuery(pattern=r"spam"))
-@MK7.on(events.CallbackQuery(pattern=r"spam"))
-@MK8.on(events.CallbackQuery(pattern=r"spam"))
-@MK9.on(events.CallbackQuery(pattern=r"spam"))
-@MK10.on(events.CallbackQuery(pattern=r"spam"))
+
 async def help_spam(event):
    if event.query.user_id in SUDO_USERS:    
        await event.edit(spam_msg,
             buttons=[[Button.inline("< Back", data="help_back"),],],
             ) 
    else:
-        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝐈𝐕𝐀𝐍𝐒𝐇⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
+        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝗨𝗕𝗛⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
 
 
 @MK1.on(events.CallbackQuery(pattern=r"raid"))
 @MK2.on(events.CallbackQuery(pattern=r"raid"))
-@MK3.on(events.CallbackQuery(pattern=r"raid"))
-@MK4.on(events.CallbackQuery(pattern=r"raid"))
-@MK5.on(events.CallbackQuery(pattern=r"raid"))
-@MK6.on(events.CallbackQuery(pattern=r"raid"))
-@MK7.on(events.CallbackQuery(pattern=r"raid"))
-@MK8.on(events.CallbackQuery(pattern=r"raid"))
-@MK9.on(events.CallbackQuery(pattern=r"raid"))
-@MK10.on(events.CallbackQuery(pattern=r"raid"))
+
 async def help_raid(event):
      if event.query.user_id in SUDO_USERS:
         await event.edit(raid_msg,
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )  
      else:
-        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝐈𝐕𝐀𝐍𝐒𝐇⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
+        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝗨𝗕𝗛⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
 
 
 @MK1.on(events.CallbackQuery(pattern=r"extra"))
 @MK2.on(events.CallbackQuery(pattern=r"extra"))
-@MK3.on(events.CallbackQuery(pattern=r"extra"))
-@MK4.on(events.CallbackQuery(pattern=r"extra"))
-@MK5.on(events.CallbackQuery(pattern=r"extra"))
-@MK6.on(events.CallbackQuery(pattern=r"extra"))
-@MK7.on(events.CallbackQuery(pattern=r"extra"))
-@MK8.on(events.CallbackQuery(pattern=r"extra"))
-@MK9.on(events.CallbackQuery(pattern=r"extra"))
-@MK10.on(events.CallbackQuery(pattern=r"extra"))
+
 async def help_extra(event):
    if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
    else:
-        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝐈𝐕𝐀𝐍𝐒𝐇⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
+        await event.answer("𝗣ᴀʜʟᴇ 𝗝ᴀᴀᴋᴇ 𝗣ᴀᴘᴀ 𝗕ᴏʟ ⚡️𝐒𝐇𝗨𝗕𝗛⚡️ 𝗞ᴏ 𝗪ᴏ 𝗧ᴜᴍʜᴇ 𝗦ᴜᴅᴏ 𝗗ᴇ 𝗗ᴇɢᴀ", cache_time=0, alert=True)
