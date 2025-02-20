@@ -2,25 +2,18 @@ import os
 import sys
 import heroku3
 from datetime import datetime
-from config import MK1, MK2, MK3, MK4, MK5 , MK6, MK7, MK8, MK9, MK10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, CMD_HNDLR as hl
+from config import MK1, MK2, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events
 
 
 @MK1.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 @MK2.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@MK3.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@MK4.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@MK5.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@MK6.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@MK7.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@MK8.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@MK9.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@MK10.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"»⚡️𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥⚡️_ᴏᴘ_ʙᴏʟᴛᴀ", parse_mode=None, link_preview=None)
+        altron = await e.reply(f"»𝗦𝗛𝗨𝗕𝗛_𝗦𝗣𝗔𝗠_𝗕𝗢𝗧_ᴏᴘ_ʙᴏʟᴛᴀ", parse_mode=None, link_preview=None)
         end = datetime.now()
         mp = (end - start).microseconds / 1000
         await altron.edit(f"_⚡️𝗞𝗜𝗦𝗞𝗜 𝗚𝗔𝗔𝗡𝗗 𝗠𝗔𝗥𝗡𝗜 𝗕𝗢𝗦𝗦⚡️_\n» `{mp} ms`")
@@ -28,14 +21,7 @@ async def ping(e):
 
 @MK1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 @MK2.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@MK3.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@MK4.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@MK5.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@MK6.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@MK7.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@MK8.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@MK9.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@MK10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+
 async def restart(e):
     if e.sender_id in SUDO_USERS:
         await e.reply(f"😖ʀᴇʙᴏᴏᴛ ᴋᴀʀᴋᴇ ᴛᴜɴᴇ ᴀᴘɴɪ ᴀᴜᴋᴀᴀᴛ ᴅɪᴋʜᴀ ᴅɪ...!😪😒")
@@ -45,38 +31,6 @@ async def restart(e):
             pass
         try:
             await MK2.disconnect()
-        except Exception:
-            pass
-        try:
-            await MK3.disconnect()
-        except Exception:
-            pass
-        try:
-            await MK4.disconnect()
-        except Exception:
-            pass
-        try:
-            await MK5.disconnect()
-        except Exception:
-            pass
-        try:
-            await MK6.disconnect()
-        except Exception:
-            pass
-        try:
-            await MK7.disconnect()
-        except Exception:
-            pass
-        try:
-            await MK8.disconnect()
-        except Exception:
-            pass
-        try:
-            await MK9.disconnect()
-        except Exception:
-            pass
-        try:
-            await MK10.disconnect()
         except Exception:
             pass
 
@@ -89,17 +43,10 @@ sudousers = os.environ.get("SUDO_USER", None)
 
 @MK1.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
 @MK2.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
-@MK3.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
-@MK4.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
-@MK5.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
-@MK6.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
-@MK7.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
-@MK8.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
-@MK9.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
-@MK10.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
+
 async def addsudo(event):
     if event.sender_id == OWNER_ID:
-        ok = await event.reply(f"» __ᴇᴋ ɴᴀʏᴀ⚡️sᴛʀᴀɴɢᴇʀ's⚡️ʙᴇᴛᴀ ᴀᴅᴅ ʜᴏ ʀʜᴀ...__")
+        ok = await event.reply(f"» __ᴇᴋ ɴᴀʏᴀ🍃𝗦𝗛𝗨𝗕𝗛 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧🍃  ᴀᴅᴅ ʜᴏ ʀʜᴀ...__")
         mks = "SUDO_USER"
         target = ""
         if HEROKU_APP_NAME is not None:
@@ -119,7 +66,7 @@ async def addsudo(event):
             newsudo = f"{sudousers} {target}"
         else:
             newsudo = f"{target}"
-        await ok.edit(f"» **ɴᴇᴡ⚡️sᴛʀᴀɴɢᴇʀ's ⚡️ʙᴇᴛᴀ**: `{target}`\n» `ʙᴏᴛ ғɪʀ sᴇ sᴜʀᴜ ʜᴏ ʀʜᴀ...`")
+        await ok.edit(f"» **ɴᴇᴡ🍃𝗦𝗛𝗨𝗕𝗛 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧🍃**: `{target}`\n» `ʙᴏᴛ ғɪʀ sᴇ sᴜʀᴜ ʜᴏ ʀʜᴀ...`")
         heroku_var[mks] = newsudo   
    
      
