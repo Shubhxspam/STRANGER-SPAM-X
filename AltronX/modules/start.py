@@ -1,5 +1,5 @@
 from telethon import events, Button
-from config import MK1, MK2, 
+from config import MK1, MK2
 from AltronX.modules.help import *
 import telethon
 
